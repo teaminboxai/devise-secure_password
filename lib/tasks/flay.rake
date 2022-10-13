@@ -9,7 +9,7 @@ FLAY_ROOT_DIR = File.expand_path('../..', __dir__)
 FLAY_FILES = Dir.glob("#{FLAY_ROOT_DIR}/lib/devise/secure_password/**/*.rb")
 
 unless Gem::Specification.find_all_by_name('flay').any?
-  puts 'Flay gem is missing. Install it.'
+
   return
 end
 require 'flay'
