@@ -8,7 +8,6 @@ require 'rake'
 SPEC_ROOT_DIR = File.expand_path('../../spec', __dir__)
 
 unless Gem::Specification.find_all_by_name('rspec').any?
-  puts 'Rspec gem is missing. Install it.'
   return
 end
 require 'rspec/core/rake_task'
